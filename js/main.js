@@ -28,28 +28,27 @@ numbers.innerHTML = arrayNumbers;
 console.log(arrayNumbers);
 
 setTimeout(function(){
-    numbers.remove();
+numbers.remove();}, 3000);
+setTimeout(function(){
     const numeriIndovinati = [];
-
     for(let i = 1; i <= 5; i++){
-       const userNumber = Number(prompt("Inserisci un numero"));
-       
-       if(arrayNumbers.includes(userNumber)){
-        if(numeriIndovinati.includes(userNumber)){
-            alert("il numero è già presente");
-        }else{
-            // allroa l'utente ha azzeccato uno dei numeri
-            numeriIndovinati.push(userNumber);
+         const userNumber = Number(prompt("Inserisci un numero"));
+        if(arrayNumbers.includes(userNumber)){
+            if(numeriIndovinati.includes(userNumber)){
+              alert("il numero è già presente");
+            }else{
+              // allroa l'utente ha azzeccato uno dei numeri
+              numeriIndovinati.push(userNumber);
+            }
         }
-       }
     }
-
     // stampare il risulato
     console.log(numeriIndovinati);
     if(numeriIndovinati.length > 0){         
-    alert(`Hai indovinato ${numeriIndovinati.length} numeri, i numeri indovinati sono: ${numeriIndovinati}`)     
+        alert(`Hai indovinato ${numeriIndovinati.length} numeri, i numeri indovinati sono: ${numeriIndovinati}`)     
     }else{       
-    alert('sei schiappa')
+        alert('sei schiappa')
     }
-},3000);
+},3100);
 
+// stampare il risulato
