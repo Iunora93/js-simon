@@ -41,8 +41,8 @@ setTimeout(function(){
 
     // stampare il risulato
     console.log(numeriIndovinati);
-    if(numeriIndovinati.length > 0){
-    alert(`Hai indovinato ${numeriIndovinati.length} numeri, i numeri indovinati sono: ${numeriIndovinati}`)
+    if(numeriIndovinati.length === arrayNumbers.length){
+    alert(`Hai indovinato ${numeriIndovinati.length} numeri, i numeri indovinati sono: ${numeriIndovinati}`)  
     }else{
     alert('sei schiappa')
     }
