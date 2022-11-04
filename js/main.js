@@ -44,6 +44,8 @@ setTimeout(function(){
     if(numeriIndovinati.length === arrayNumbers.length){
     alert(`Hai indovinato ${numeriIndovinati.length} numeri, i numeri indovinati sono: ${numeriIndovinati}`)  
     }else{
+        if(arrayNumbers.includes(numeriIndovinati));
+        arrayNumbers.push(numeriIndovinati);
     alert('sei schiappa')
     }
 },1000);
