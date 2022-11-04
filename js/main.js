@@ -33,19 +33,22 @@ setTimeout(function(){
 
     for(let i = 1; i <= 5; i++){
        const userNumber = Number(prompt("Inserisci un numero"));
+       
        if(arrayNumbers.includes(userNumber)){
+        if(numeriIndovinati.includes(userNumber)){
+            alert("il numero è già presente");
+        }else{
             // allroa l'utente ha azzeccato uno dei numeri
             numeriIndovinati.push(userNumber);
+        }
        }
     }
 
     // stampare il risulato
     console.log(numeriIndovinati);
-    if(numeriIndovinati.length === arrayNumbers.length){
-    alert(`Hai indovinato ${numeriIndovinati.length} numeri, i numeri indovinati sono: ${numeriIndovinati}`)  
-    }else{
-        if(arrayNumbers.includes(numeriIndovinati));
-        arrayNumbers.push(numeriIndovinati);
+    if(numeriIndovinati.length > 0){         
+    alert(`Hai indovinato ${numeriIndovinati.length} numeri, i numeri indovinati sono: ${numeriIndovinati}`)     
+    }else{       
     alert('sei schiappa')
     }
 },1000);
