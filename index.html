@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simon Says</title>
 </head>
 <body>
+    <h1 class="numbers"></h1>
     <script src="js/main.js"></script>
 </body>
 </html>
+
+<!-- Descrizione:
+Visualizzare in pagina 5 numeri casuali da 1 a 100 senza duplicati.
+Da lì parte un timer di 30 secondi.
+Dopo 30 secondi i numeri scompaiono e l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
+Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+Consigli del giorno:
+* Pensate prima in italiano.
+* Dividete in piccoli problemi la consegna.
+* Individuate gli elementi di cui avete bisogno per realizzare il programma. -->
+
+<!-- 
+    1.Creo un array di 5 numeri senza duplicati
+        a) Quale ciclo utilizzo?
+        b) Come faccio a creare un numero randomico fra 1 e 100?
+    2.Stampo nella pagina html l'array dei numeri
+        a) Seleziono un elemento nella pagina
+        b) Stampo nel suo innerHTML l'array
+    3.Parte il timer di 30 secondi
+        a) Quale timing function devo o posso utilizzare?
+        b) Nascondo l'elemento in cui ho stampato l'array
+        OPZIONE 1
+        c) Utilizzo un ciclo per chiedere per 5 volte di inserire un numero all'utente (Quale ciclo posso utilizzare?) e li salvo (dove li salvo?)
+        d) Confronto i due array, come posso confrontarli?
+        OPZIONE 2
+        c) Utilizzo un ciclo per chiedere per 5 volte di inserire un numero all'utente, verifico se il numero inserito è presente nell'array dei numeri
+        d) Se è presente lo pusho in un array
+        e) Stampo il risultato, volendo con un alert oppure in pagina
+ -->
