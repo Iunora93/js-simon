@@ -51,5 +51,5 @@ setTimeout(function(){
     }else{       
     alert('sei schiappa')
     }
-},1000);
+},3000);
 
